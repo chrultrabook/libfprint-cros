@@ -131,6 +131,7 @@ default_drivers = [
     'goodixmoc',
     'nb1010',
     'fpcmoc',
+    'cros_fp',
 
     # SPI
     'elanspi',
