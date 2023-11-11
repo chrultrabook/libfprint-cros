@@ -38,6 +38,11 @@ static const FpIdEntry id_table[] = {
 };
 
 static void
+fpi_device_cros_fp_init(FpiDeviceCrosFp *klass)
+{
+}
+
+static void
 fpi_device_cros_fp_class_init (FpiDeviceCrosFpClass *klass)
 {
   FpDeviceClass *dev_class = FP_DEVICE_CLASS (klass);
