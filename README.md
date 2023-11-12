@@ -19,6 +19,26 @@
 
 </div>
 
+## Developing Fingerprint Driver for Chromebooks
+### Setup
+Install meson and some dependencies. Run
+```bash
+meson setup \
+  --prefix        /usr \
+  --libexecdir    lib \
+  --sbindir       bin \
+  --buildtype     plain \
+  --auto-features enabled \
+  --wrap-mode     nodownload
+mesonbuild
+cd mesonbuild
+```
+### Install
+```
+# In `mesonbuild`
+sudo meson install
+```
+
 ## History
 
 **LibFPrint** was originally developed as part of an
